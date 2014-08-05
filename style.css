@@ -1,4 +1,20 @@
-#center{
-    align-content: center;
+body {
+    margin: 0 auto;
+    width: 800px;
     font-family: Verdana;
+    background-color: #e8e7e7;
+    padding-top: 200px;
+}
+section {
+    width: 800px;
+}
+#tdiv {
+    float: left;
+    width: 200px;
+    vertical-align: middle;
+}
+#tdivcenter {
+    float: left;
+    width: 400px;
+    vertical-align: middle;
 }
