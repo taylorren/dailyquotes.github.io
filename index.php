@@ -18,9 +18,12 @@
                     $sql_login_db = "sql348663"; # MySql Database
                         //conection: 
                         $link = mysqli_connect($sql_login_host,$sql_login_user,$sql_login_pass,$sql_login_db) or die("Error " . mysqli_error($link));
-
-
+                        
                         $query = "SELECT * FROM quotesDB ORDER BY RAND() LIMIT 1;";
+                        
+                        $res=mysqli_query($link, $query);
+                        $result=mysqli_fetch();
+                        
                         $randomquote = mysqli_result($query);
                         echo $randomquote; 
                 ?>
